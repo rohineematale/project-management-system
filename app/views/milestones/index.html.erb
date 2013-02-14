@@ -1,0 +1,34 @@
+<h1> Milestone Listing</h1>
+<hr>
+<div class="white_bg">
+<table border=1 class="listing">
+	<thead>
+		<tr>
+			<th>Milestone ID</th>
+			<th>Milestone Name</th>
+			<th>Milestone Status</th>
+			<th>Manage</th>
+			<th>Task</th>
+		</tr>		
+	</thead>
+	<tbody>
+		<% @milestones.each do |m| %>
+			<tr>
+				<td><%= m.id%></td>
+				<td><%= m.name%></td>
+				<td><%= m.status%></td>
+				<td><%=link_to "Show",project_milestone_path(@project,m)%>
+					<%=link_to "Edit",edit_project_milestone_path(@project,m)%>	
+					<%=link_to "Delete",project_milestone_path(@project,m), :method=>'delete'%>
+					<%if m.status!="Finished"%>
+						<%=link_to "Finish",finish_milestone_project_milestone_path(@project,m)%>	
+					<%end%>
+					</td>
+					<td><%=link_to "Task",project_milestone_tasks_path(@project,m)%></td>
+			</tr>	
+		<% end %>
+	</tbody>
+</table>
+<br>
+<%=link_to "New Milestone",new_project_milestone_path(@project)%>
+</div>

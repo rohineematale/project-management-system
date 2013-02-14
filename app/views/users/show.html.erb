@@ -1,0 +1,25 @@
+<h2> User details</h2>
+<div class="white_bg">
+<table border=1 class="listing" id="show">
+	<thead>
+		<tr>
+			<th>User ID</th>
+			<td><%= @user.id%></td>
+		<tr>
+		</tr>
+			<th>User Name</th>
+			<td><%= @user.name%></td>
+		</tr>
+		<tr>
+			<th>Projects Associated</th>
+			<ul>
+			<td><%@user.projects.each do |us| %>
+				<li>
+					<%= us.name %><br></li>
+				<% end %>
+			</ul>
+			</td>
+		</tr>		
+	</thead>
+</table>
+</div>

@@ -1,0 +1,26 @@
+<h1> User Listing</h1>
+<hr>
+<div class="white_bg">
+<table border=1 class="listing">
+	<thead>
+		<tr>
+			<th>User ID</th>
+			<th>User Name</th>
+			<th>Manage</th>
+		</tr>		
+	</thead>
+	<tbody>
+		<% @users.each do |u| %>
+			<tr>
+				<td><%= u.id%></td>
+				<td><%= u.name%></td>
+				<td><%=link_to "Show",user_path(u)%>
+					<%=link_to "Edit",edit_user_path(u)%>	
+					<%=link_to "Delete",user_path(u), :method=>"delete"%></td>
+			</tr>	
+		<% end %>
+	</tbody>
+</table>
+<br>
+<%=link_to "New User",new_user_path%>
+</div>

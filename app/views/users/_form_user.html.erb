@@ -1,0 +1,27 @@
+<%= form_for(@user) do |u|%>
+<% if @user.errors.present? %>
+<ul class="warning">
+	<% @user.errors.full_messages.each do |message| %>
+	<li><%= message%></li>
+	<% end %>
+</ul>
+<% end %>
+
+<h2><%=hname%> User</h2>
+<div class="white_bg">
+<table border=1 class="listing">
+		<tr><th>User ID</th><td><%= u.text_field :id %></td></tr>
+		<tr><th>User Name</th><td><%= u.text_field :name %></td></tr>
+		<tr><th>Project Name</th>
+			<td><%@projects.each do |project| %>
+				<%= check_box_tag "user[project_ids][]",project.id,@user.projects.include?(project) %>
+				<%= project.name %><br>
+				<% end %>
+			</td>
+		</tr>
+</table><br>
+<center>
+<%=	u.submit button %>
+</center>
+<% end %>
+</div>

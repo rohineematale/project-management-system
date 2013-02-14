@@ -1,0 +1,37 @@
+<h2>Project details</h2>
+<div class="white_bg">
+<table border=1 class="listing" id="show">
+	<thead>
+		<tr>
+			<th>Project ID</th>
+			<td><%= @project.id%></td>
+		</tr>
+		<tr>
+			<th>Project Name</th>
+			<td><%= @project.name%></td>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<td><%= @project.desc%></td>
+		</tr>
+		<tr>	
+			<th>Start Date</th>
+			<td><%= @project.start_date.strftime("%d/%m/%Y")%></td>		
+		</tr>
+		<tr>
+			<th>End Date</th>
+			<td><%= @project.end_date.strftime("%d/%m/%Y")%></td>
+		</tr>
+		<tr>
+			<th>Users Associated</th>
+			<ul>
+			<td><%@project.users.each do |us| %>
+				<li>
+					<%= us.name %><br></li>
+				<% end %>
+			</ul>
+			</td>
+		</tr>				
+	</thead>
+</table>
+</div>

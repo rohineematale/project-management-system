@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management System</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="head_bg">
+		<h1 class="heading">Project Management System</h1>
+		<div class="container_12">
+			<div class="grid_4">
+				<ul class="menu">
+					<li><%= link_to "Project", projects_path %></li>
+					<li><%= link_to "User", users_path %></li>
+				</ul>
+			</div>
+	</div>
+</div>			
+
+<div class="container_12">
+	<div class="container_6 prefix_3 suffix_3">
+		<center>
+		<%=flash[:notice] %>
+		</center>
+			<%= yield %>
+	</div>
+</div>
+</body>
+</html>

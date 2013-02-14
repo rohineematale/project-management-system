@@ -1,0 +1,31 @@
+<h1> Task Listing</h1>
+<hr>
+<div class="white_bg">
+<table border=1 class="listing"%>
+	<thead>
+		<tr>
+			<th>Task ID</th>
+			<th>Task Name</th>
+			<th>Task Status</th>
+			<th>Manage</th>
+		</tr>		
+	</thead>
+	<tbody>
+		<% @tasks.each do |t| %>
+			<tr>
+				<td><%= t.id%></td>
+				<td><%= t.name%></td>
+				<td><%= t.status%></td>				
+				<td><%=link_to "Show",project_milestone_task_path(@project,@milestone,t)%>
+					<%= link_to "Edit", edit_project_milestone_task_path(@project,@milestone,t)%>
+					<%= link_to "Delete",project_milestone_task_path(@project,@milestone,t), :method=>"delete"%>
+					<%if t.status!="Finished"%>
+						<%= link_to "Finish",finish_task_project_milestone_task_path(@project,@milestone,t)%>
+					<%end%></td>
+			</tr>	
+		<% end %>
+	</tbody>
+</table>
+<br>
+<%= link_to "Add New Task", new_project_milestone_task_path(@project,@milestone)%>
+</div>

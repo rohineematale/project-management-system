@@ -1,0 +1,35 @@
+	<h2> Task details</h2>
+	<div class="white_bg">
+	<table border=1 class="listing" id="show">
+	<thead>
+		<tr>
+			<th>Task ID</th>
+			<td><%= @task.id%></td>
+		</tr>
+		<tr>
+			<th>Task Name</th>
+			<td><%= @task.name%></td>
+		</tr>
+		<tr>
+			<th>Milestone ID</th>
+			<td><%= Milestone.find(@task.milestone_id)[:name]%></td>
+		</tr>
+		<tr>
+			<th>User ID</th>
+			<td><%= @task.user_id%></td>
+		</tr>
+		<tr>
+			<th>Start Date</th>	
+			<td><%= @task.start_date.strftime("%d/%m/%Y")%></td>	
+		</tr>
+		<tr>
+			<th>End Date</th>
+			<td><%= @task.end_date.strftime("%d/%m/%Y")%></td>
+		</tr>
+		<tr>
+			<th>Status</th>
+			<td><%= @task.status%></td>	
+		</tr>		
+	</thead>
+	</table>
+</div>

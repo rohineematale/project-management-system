@@ -1,0 +1,632 @@
+Script started on Wednesday 06 February 2013 01:34:54 PM IST
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rail c
+No command 'rail' found, did you mean:
+ Command 'tail' from package 'coreutils' (main)
+ Command 'mail' from package 'mailutils' (universe)
+ Command 'rails' from package 'rails' (universe)
+ Command 'sail' from package 'bsdgames' (universe)
+ Command 'rmail' from package 'rmail' (universe)
+ Command 'rmail' from package 'exim4-daemon-heavy' (main)
+ Command 'rmail' from package 'courier-mta' (universe)
+ Command 'rmail' from package 'masqmail' (universe)
+ Command 'rmail' from package 'postfix' (main)
+ Command 'rmail' from package 'exim4-daemon-light' (main)
+ Command 'rain' from package 'bsdgames' (universe)
+ Command 'qail' from package 'qmail' (universe)
+rail: command not found
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rail c[Cs c
+Loading development environment (Rails 3.2.11)
+1.9.3-p374 :001 > u1.task
+NameError: undefined local variable or method `u1' for main:Object
+	from (irb):1
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :002 > u1.tasks
+NameError: undefined local variable or method `u1' for main:Object
+	from (irb):2
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :003 > u1.tasks[K[K[K[K[K[K[K[Ku1=User.first
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+ => #<User id: 1, name: "Rohinee", created_at: "2013-02-06 08:03:08", updated_at: "2013-02-06 08:03:08"> 
+1.9.3-p374 :004 > u1.tak[Ksks
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."user_id" = 1
+ => [] 
+1.9.3-p374 :005 > t1[K[KTak[Ksk
+ => Task(id: integer, name: string, milestone_id: integer, user_id: integer, start_datedate: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :006 > Milw[Kestone
+ => Milestone(id: integer, name: string, project_id: integer, start_date: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :007 > m1=Milestone.new(){)})n})a})m})e})=})[1P})[1P})[1P})[1P})[1P}):})n})a})m})e})+})[1P})=})>})"})"})M"})1"})[C,}):})p})r})o})j})e})c})t})_})i})d})=})>})1}),}):})s})t})a})r})t})-})d})a})t})e})[1P})[1P})[1P})[1P})[1P})_})d})a})t})e})=})>})D})a})t})e}).})t})o})d})a})y})-})3})0}),})e})n})d})_})d})a})t})e})[C:end_date})[C[C[C[C[C[C[C[C=})>})D})A})t})e})[1P})[1P})[1P})a})t})e}).})t})o})d})a})y})-})5})[1P})[1P})-})1}),})s})t})a})t})u})s}):status})[C[C[C[C[C[C[C=})>})"})"})f"})i"})n"})i"})s"})h"})e"})d"})[C[C[C
+ => #<Milestone id: nil, name: "M1", project_id: 1, start_date: "2013-01-06 18:30:00", end_date: "2013-02-04 18:30:00", status: "finished", created_at: nil, updated_at: nil> 
+1.9.3-p374 :008 > m1=Milestone.new({:name=>"M1",:project_id=>1,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[1P=Milestone.new({:name=>"M1",:project_id=>1,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2=Milestone.new({:name=>"M1",:project_id=>1,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P",:project_id=>1,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2",:project_id=>1,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2,:start_date=>Date.today-30,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P,:end_date=>Date.today-1,:status=>"finished"})[1P,:end_date=>Date.today-1,:status=>"finished"})2,:end_date=>Date.today-1,:status=>"finished"})0,:end_date=>Date.today-1,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P1,:status=>"finished"})+1,:status=>"finished"})[C0,:status=>"finished"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})I"})n"})P"})r"})o"})c"})e"})s"})s"})
+ => #<Milestone id: nil, name: "M2", project_id: 2, start_date: "2013-01-16 18:30:00", end_date: "2013-02-15 18:30:00", status: "InProcess", created_at: nil, updated_at: nil> 
+1.9.3-p374 :009 > m2=Milestone.new({:name=>"M2",:project_id=>2,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[1P",:project_id=>2,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3",:project_id=>2,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P=Milestone.new({:name=>"M3",:project_id=>2,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3=Milestone.new({:name=>"M3",:project_id=>2,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C3,:start_date=>Date.today-20,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P,:end_date=>Date.today+10,:status=>"InProcess"})[1P,:end_date=>Date.today+10,:status=>"InProcess"})[1P,:end_date=>Date.today+10,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P0,:status=>"InProcess"})20,:status=>"InProcess"})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})[1P"})S"})t"})a"})r"})t"})
+ => #<Milestone id: nil, name: "M3", project_id: 3, start_date: "2013-02-05 18:30:00", end_date: "2013-02-25 18:30:00", status: "Start", created_at: nil, updated_at: nil> 
+1.9.3-p374 :010 > m1.save
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (9.8ms)[0m  INSERT INTO "milestones" ("created_at", "end_date", "name", "project_id", "start_date", "status", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 06 Feb 2013 08:54:38 UTC +00:00], ["end_date", Mon, 04 Feb 2013 18:30:00 UTC +00:00], ["name", "M1"], ["project_id", 1], ["start_date", Sun, 06 Jan 2013 18:30:00 UTC +00:00], ["status", "finished"], ["updated_at", Wed, 06 Feb 2013 08:54:38 UTC +00:00]]
+  [1m[36m (320.6ms)[0m  [1mcommit transaction[0m
+ => true 
+1.9.3-p374 :011 > m1.save[1P.save2.save
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "milestones" ("created_at", "end_date", "name", "project_id", "start_date", "status", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 06 Feb 2013 08:54:41 UTC +00:00], ["end_date", Fri, 15 Feb 2013 18:30:00 UTC +00:00], ["name", "M2"], ["project_id", 2], ["start_date", Wed, 16 Jan 2013 18:30:00 UTC +00:00], ["status", "InProcess"], ["updated_at", Wed, 06 Feb 2013 08:54:41 UTC +00:00]]
+  [1m[35m (238.8ms)[0m  commit transaction
+ => true 
+1.9.3-p374 :012 > m2.save[1P.save3.save
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "milestones" ("created_at", "end_date", "name", "project_id", "start_date", "status", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["created_at", Wed, 06 Feb 2013 08:54:43 UTC +00:00], ["end_date", Mon, 25 Feb 2013 18:30:00 UTC +00:00], ["name", "M3"], ["project_id", 3], ["start_date", Tue, 05 Feb 2013 18:30:00 UTC +00:00], ["status", "Start"], ["updated_at", Wed, 06 Feb 2013 08:54:43 UTC +00:00]]
+  [1m[36m (253.0ms)[0m  [1mcommit transaction[0m
+ => true 
+1.9.3-p374 :013 > p=Project.fisrt[K[K[Krst
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" LIMIT 1
+ => #<Project id: 1, name: "Forth", desc: "Forth Project", start_date: "2013-01-11 18:30:00", end_date: "2013-01-31 18:30:00", created_at: "2013-02-06 08:03:23", updated_at: "2013-02-06 08:03:23"> 
+1.9.3-p374 :014 > p.milestones
+  [1m[36mMilestone Load (0.4ms)[0m  [1mSELECT "milestones".* FROM "milestones" WHERE "milestones"."project_id" = 1[0m
+ => [#<Milestone id: 1, name: "M1", project_id: 1, start_date: "2013-01-06 18:30:00", end_date: "2013-02-04 18:30:00", status: "finished", created_at: "2013-02-06 08:54:38", updated_at: "2013-02-06 08:54:38">] 
+1.9.3-p374 :015 > u1=User.first
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" LIMIT 1
+ => #<User id: 1, name: "Rohinee", created_at: "2013-02-06 08:03:08", updated_at: "2013-02-06 08:03:08"> 
+1.9.3-p374 :016 > u1.projects
+NoMethodError: undefined method `projects' for #<User:0xb720dc0>
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/attribute_methods.rb:407:in `method_missing'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/attribute_methods.rb:149:in `method_missing'
+	from (irb):16
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :017 > u1.projects[K[K[K[K[K[K[K[K[K[K[KP1[K[Kp1=project.disrt[K[K[K[K[Kfirst
+NameError: undefined local variable or method `project' for main:Object
+	from (irb):17
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :018 > p1=project.first[C[1Project.firstProject.first
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" LIMIT 1[0m
+ => #<Project id: 1, name: "Forth", desc: "Forth Project", start_date: "2013-01-11 18:30:00", end_date: "2013-01-31 18:30:00", created_at: "2013-02-06 08:03:23", updated_at: "2013-02-06 08:03:23"> 
+1.9.3-p374 :019 > p1.users
+NoMethodError: undefined method `users' for #<Project:0xb3ca388>
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/attribute_methods.rb:407:in `method_missing'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/attribute_methods.rb:149:in `method_missing'
+	from (irb):19
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :020 > 
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails c[1P csudo aptitude search sublime[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krak[Kila[Ks db:[1P db:[1P db:[1P db:k db:e db:[C[C[C[Cmigrate
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails v[Kc
+Loading development environment (Rails 3.2.11)
+1.9.3-p374 :001 > User
+ => User(id: integer, name: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :002 > u1=User.1[Kfirst
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+ => #<User id: 1, name: "Rohinee", created_at: "2013-02-06 08:03:08", updated_at: "2013-02-06 08:03:08"> 
+1.9.3-p374 :003 > u1.projects
+ActiveRecord::HasManyThroughSourceAssociationNotFoundError: Could not find the source association(s) :project or :projects in model UserProject. Try 'has_many :projects, :through => :user_projects, :source => <name>'. Is it one of ?
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/reflection.rb:509:in `check_validity!'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/associations/association.rb:26:in `initialize'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/associations/collection_association.rb:24:in `initialize'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/associations/has_many_through_association.rb:10:in `initialize'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/associations.rb:160:in `new'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/associations.rb:160:in `association'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/associations/builder/association.rb:44:in `block in define_readers'
+	from (irb):3
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :004 > 
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails cke db:migrate
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate[8Pils c
+Loading development environment (Rails 3.2.11)
+1.9.3-p374 :001 > u1-User.i[Ku1[K[K[K[K[K[K[K[K=u[KUser.first
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+ => #<User id: 1, name: "Rohinee", created_at: "2013-02-06 08:03:08", updated_at: "2013-02-06 08:03:08"> 
+1.9.3-p374 :002 > u1.projects
+  [1m[35mProject Load (0.1ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = 1
+ => [] 
+1.9.3-p374 :003 > u1.projects[C[K[K[K[K[K[K[K[K[K[K[Kp1=Projects.[K[K.fisr[K[Krst
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects" LIMIT 1[0m
+ => #<Project id: 1, name: "Forth", desc: "Forth Project", start_date: "2013-01-11 18:30:00", end_date: "2013-01-31 18:30:00", created_at: "2013-02-06 08:03:23", updated_at: "2013-02-06 08:03:23"> 
+1.9.3-p374 :004 > p1.user[Krs
+NoMethodError: undefined method `users' for #<Project:0x9c38a08>
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/attribute_methods.rb:407:in `method_missing'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/attribute_methods.rb:149:in `method_missing'
+	from (irb):4
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :005 > 
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails cke db:migrate[8Pils c
+Loading development environment (Rails 3.2.11)
+1.9.3-p374 :001 > p1=Proe[Kject.first
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT "projects".* FROM "projects" LIMIT 1[0m
+ => #<Project id: 1, name: "Forth", desc: "Forth Project", start_date: "2013-01-11 18:30:00", end_date: "2013-01-31 18:30:00", created_at: "2013-02-06 08:03:23", updated_at: "2013-02-06 08:03:23"> 
+1.9.3-p374 :002 > p1.users
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" INNER JOIN "user_projects" ON "users"."id" = "user_projects"."user_id" WHERE "user_projects"."project_id" = 1
+ => [] 
+1.9.3-p374 :003 > u1=User.first
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" LIMIT 1[0m
+ => #<User id: 1, name: "Rohinee", created_at: "2013-02-06 08:03:08", updated_at: "2013-02-06 08:03:08"> 
+1.9.3-p374 :004 > u1.projects
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects" INNER JOIN "user_projects" ON "projects"."id" = "user_projects"."project_id" WHERE "user_projects"."user_id" = 1
+ => [] 
+1.9.3-p374 :005 > Milestone.aa[Kll
+  [1m[36mMilestone Load (0.3ms)[0m  [1mSELECT "milestones".* FROM "milestones" [0m
+ => [#<Milestone id: 1, name: "M1", project_id: 1, start_date: "2013-01-06 18:30:00", end_date: "2013-02-04 18:30:00", status: "finished", created_at: "2013-02-06 08:54:38", updated_at: "2013-02-06 08:54:38">, #<Milestone id: 2, name: "M2", project_id: 2, start_date: "2013-01-16 18:30:00", end_date: "2013-02-15 18:30:00", status: "InProcess", created_at: "2013-02-06 08:54:41", updated_at: "2013-02-06 08:54:41">, #<Milestone id: 3, name: "M3", project_id: 3, start_date: "2013-02-05 18:30:00", end_date: "2013-02-25 18:30:00", status: "Start", created_at: "2013-02-06 08:54:43", updated_at: "2013-02-06 08:54:43">] 
+1.9.3-p374 :006 > m4=Milestone.new[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[KMilestonw[Ke
+ => Milestone(id: integer, name: string, project_id: integer, start_date: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :007 > m4=Milestone.new(){)})n})m})a})[1P})[1P})[1P}):})m})[1P})n})a})m})e})=})>})"})"})M"})4"})[C,})P})r})o})j})e})c})t})[1P})[1P})[1P})[1P})[1P})[1P})[1P}) }):})[1P}):})p})r})o})j})e})c})t})_})i})d})=})4}),}) }):})s})t})a})r})t})_})d})a})t})e})=})D})a})t})e}).})t})o})d})a})y})+})2}),}) }):})e})n})d})_})d})a})t})e})=})>})D})a})t})e}).})t})o})d})a})y})+})2})0}),}) })S})t})[1P})[1P})s})r})a})r})u})[1P})[1P})[1P})[1P})t})a})t})u})s}):status})[C[C[C[C[C[C=})>})"})"})S"})t"})[1P"})[1P"})s"})t"})a"})r"})t"})
+SyntaxError: (irb):7: syntax error, unexpected tINTEGER, expecting tASSOC
+...new({:name=>"M4", :project_id=4, :start_date=Date.today+2, :...
+...                               ^
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :008 > m4=Milestone.new({:name=>"M4", :project_id=4, :start_date=Date.today+2, :end_date=>Date.today+20, :status=>"start"})[C[1@>[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@>
+ => #<Milestone id: nil, name: "M4", project_id: 4, start_date: "2013-02-07 18:30:00", end_date: "2013-02-25 18:30:00", status: "start", created_at: nil, updated_at: nil> 
+1.9.3-p374 :009 > t[KTask
+ => Task(id: integer, name: string, milestone_id: integer, user_id: integer, start_datedate: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :010 > t1=[K[K[Ku1
+ => #<User id: 1, name: "Rohinee", created_at: "2013-02-06 08:03:08", updated_at: "2013-02-06 08:03:08"> 
+1.9.3-p374 :011 > u1.projects
+ => [] 
+1.9.3-p374 :012 > Milestone.all
+  [1m[35mMilestone Load (0.4ms)[0m  SELECT "milestones".* FROM "milestones" 
+ => [#<Milestone id: 1, name: "M1", project_id: 1, start_date: "2013-01-06 18:30:00", end_date: "2013-02-04 18:30:00", status: "finished", created_at: "2013-02-06 08:54:38", updated_at: "2013-02-06 08:54:38">, #<Milestone id: 2, name: "M2", project_id: 2, start_date: "2013-01-16 18:30:00", end_date: "2013-02-15 18:30:00", status: "InProcess", created_at: "2013-02-06 08:54:41", updated_at: "2013-02-06 08:54:41">, #<Milestone id: 3, name: "M3", project_id: 3, start_date: "2013-02-05 18:30:00", end_date: "2013-02-25 18:30:00", status: "Start", created_at: "2013-02-06 08:54:43", updated_at: "2013-02-06 08:54:43">] 
+1.9.3-p374 :013 > Task
+ => Task(id: integer, name: string, milestone_id: integer, user_id: integer, start_datedate: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :014 > t1=Task.new(){)}):})n})a})m})e})=})>})"})"})t"})1"})[1P"})[1P"})T"})1"})[C,}):})m})i})l})e})s})t})i})[1P})o})n})n})e})[1P})[1P})e})_})i})d})=})>})1}),}):})u})s})e})r})_})i})d})=})>})1}),}):})[C :milestone_id=>1,:user_id=>1,:})[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C :user_id=>1,:})[C[C[C[C[C[C[C[C[C[C[C[C[C :})[Cs})t})a})r})t})_})d})a})t})e})
+SyntaxError: (irb):14: syntax error, unexpected '}', expecting tASSOC
+t1=Task.new({:name=>"T1", :milestone_id=>1, :user_id=>1, :start_date})
+                                                                     ^
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :015 > Milestone()1)
+NoMethodError: undefined method `Milestone' for main:Object
+	from (irb):15
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :016 > Milestone(1).(1)f(1)i(1)n(1)d(1)
+  [1m[36mMilestone Load (9.0ms)[0m  [1mSELECT "milestones".* FROM "milestones" WHERE "milestones"."id" = ? LIMIT 1[0m  [["id", 1]]
+ => #<Milestone id: 1, name: "M1", project_id: 1, start_date: "2013-01-06 18:30:00", end_date: "2013-02-04 18:30:00", status: "finished", created_at: "2013-02-06 08:54:38", updated_at: "2013-02-06 08:54:38"> 
+1.9.3-p374 :017 > Milestone.find(1)[5P(1)t1=Task.new({:name=>"T1", :milestone_id=>1, :user_id=>1, :start_date})=})>})D})a})t})e}).})t})o})d})a})y})-})1})0}),}) }):})e})n})d})_})d})a})t})e})=})>})D})a})t})e}).})t})o})a})d})[1P})[1P})d})a})y})-})5}),}) }):})s})t})a})t})u})s})=})>})"})"})f"})i"}) [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn"}))[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci"})[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs"})h"})[Ce"})d"})[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: start_date
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/base.rb:497:in `initialize'
+	from (irb):17:in `new'
+	from (irb):17
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :018 > t1=Task.new({:name=>"T1", :milestone_id=>1, :user_id=>1, :start_date=>Date.today-10, :end_date=>Date.today-5, :status=>"finishhed"})[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C
+ActiveModel::MassAssignmentSecurity::Error: Can't mass-assign protected attributes: start_date
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security/sanitizer.rb:48:in `process_removed_attributes'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security/sanitizer.rb:20:in `debug_protected_attribute_removal'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security/sanitizer.rb:12:in `sanitize'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activemodel-3.2.11/lib/active_model/mass_assignment_security.rb:230:in `sanitize_for_mass_assignment'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/attribute_assignment.rb:75:in `assign_attributes'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/base.rb:497:in `initialize'
+	from (irb):18:in `new'
+	from (irb):18
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:47:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands/console.rb:8:in `start'
+	from /home/param01/.rvm/gems/ruby-1.9.3-p374/gems/railties-3.2.11/lib/rails/commands.rb:41:in `<top (required)>'
+	from script/rails:6:in `require'
+	from script/rails:6:in `<main>'
+1.9.3-p374 :019 > 
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails cke db:migrate
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails g migration alter_[C[1P_[1P_[1P_[1P_[1P_r_e_n_a_m_e_[Cstart_date_column_to_task
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20130206094201_rename_start_date_column_to_task.rb
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db[K[K[K[K[K[K[Krails g migration rename_start_date_column_to_taskke db:migrate[K
+==  RenameStartDateColumnToTask: migrating ====================================
+-- change_column(:task, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Could not find table 'task'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:472:in `table_structure'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:346:in `columns'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:493:in `copy_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:488:in `move_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:481:in `block in alter_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:480:in `alter_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:441:in `change_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- change_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+undefined method `type=' for nil:NilClass
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:444:in `block (2 levels) in change_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:443:in `instance_eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:443:in `block in change_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:478:in `block in alter_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:508:in `block in copy_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/schema_statements.rb:160:in `create_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:494:in `copy_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:488:in `move_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:483:in `block in alter_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:480:in `alter_table'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:441:in `change_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ [H[2J]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails c
+Loading development environment (Rails 3.2.11)
+1.9.3-p374 :001 > Mi[K[KTask
+ => Task(id: integer, name: string, milestone_id: integer, user_id: integer, start_datedate: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :002 > 
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ reload!
+No command 'reload!' found, did you mean:
+ Command 'reload' from package 'upstart' (main)
+reload!: command not found
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ reload!ails c
+Loading development environment (Rails 3.2.11)
+1.9.3-p374 :001 > Taskt1=Task.new({:name=>"T1", :milestone_id=>1, :user_id=>1, :start_date=>Date.today-10, :end_date=>Date.today-5, :status=>"finishhed"})[A[C[C[C[C[C[C[C[C[C[C[C[CTask[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kreload!
+Reloading...
+ => true 
+1.9.3-p374 :002 > Task
+ => Task(id: integer, name: string, milestone_id: integer, user_id: integer, start_datedate: datetime, end_date: datetime, status: string, created_at: datetime, updated_at: datetime) 
+1.9.3-p374 :003 > 
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake dd[Kb:migrate
+==  RenameStartDateColumnToTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206094201_rename_start_date_column_to_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:551:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/railties/databases.rake:179:in `block (2 levels) in <top (required)>'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `eval'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/bin/ruby_noexec_wrapper:14:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rake db:migrate
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails g migrate rename_start_date_column_in [K_task
+Could not find generator migrate.
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails g migrate rename_start_date_column_in_task[1P rename_start_date_column_in_taski rename_start_date_column_in_tasko rename_start_date_column_in_taskn rename_start_date_column_in_task
+[1m[37m      invoke[0m  active_record
+[1m[32m      create[0m    db/migrate/20130206100113_rename_start_date_column_in_task.rb
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ rails g migration rename_start_date_column_in_task[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krake [K[K[K[K[KTask
+No command 'Task' found, did you mean:
+ Command 'task' from package 'task' (universe)
+Task: command not found
+]0;param01@param01: ~/Ruby Learnings/Practice/task1param01@param01:~/Ruby Learnings/Practice/task1$ ri[Kai[K[K[Krake da[Kb:migrate
+==  RenameStartDateColumnInTask: migrating ====================================
+-- rename_column(:tasks, :start_date, :datetime)
+rake aborted!
+An error has occurred, this and all later migrations canceled:
+
+Missing column tasks.start_date
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/sqlite_adapter.rb:456:in `rename_column'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:466:in `block in method_missing'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `block in say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:438:in `say_with_time'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:458:in `method_missing'
+/home/param01/Ruby Learnings/Practice/task1/db/migrate/20130206100113_rename_start_date_column_in_task.rb:3:in `up'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:410:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:129:in `with_connection'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:389:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:528:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:720:in `block (2 levels) in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `call'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `block in ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/database_statements.rb:192:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/transactions.rb:208:in `transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:775:in `ddl_transaction'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:719:in `block in migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `each'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:700:in `migrate'
+/home/param01/.rvm/gems/ruby-1.9.3-p374/gems/activerecord-3.2.11/lib/active_record/migration.rb:570:in `up'
+/home/para

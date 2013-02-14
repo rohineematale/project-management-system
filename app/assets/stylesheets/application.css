@@ -1,0 +1,79 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+ body {
+ 	background-color: white;
+ 	border:solid #bbb 1px;
+ 	height: 635px;
+	/*background-color:rgba(231, 226, 245, 0.47);*/
+}
+
+/*ul.manu{
+	background-color: white;
+}*/
+ul.menu li{
+	display: inline-block;
+	background-color: white;
+  margin-top: 0px;
+	font-weight: bold;
+	font-size: 150%;
+	text-transform: capitalize;
+	/*border:solid #bbb 1px;*/
+}
+
+ul.menu li a{
+	text-decoration: none;
+	color:black;
+	padding: 10px;
+}
+
+h1.heading{
+font-size: +2;
+color: white;
+text-align: center;
+}
+
+div.head_bg{
+	background-color:rgb(97, 11, 11);
+	width: 100%;
+	height: 100px;
+}
+
+div.white_bg {
+ 	background-color: white;
+}
+
+
+ul.warning {
+	color:red;
+}
+
+
+#show th{
+width: 35%;
+}
+
+table.listing{
+	width: 100%;
+ 	font-size: 16px;
+	}
+
+table.listing th{
+ 	background-color:#690404;
+ 	font-size: 20px;
+ 	color: white;
+ }
+
+table.listing tr:hover{
+	background-color: rgb(223, 223, 223);
+}

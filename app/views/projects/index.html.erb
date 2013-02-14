@@ -1,0 +1,35 @@
+<h1> Project Listing</h1>
+<hr>
+<div class="white_bg">
+<table border=1 class="listing">
+	<thead>
+		<tr>
+			<th>Project Id</th>
+			<th>Project Name</th>
+			<th>Status</th>
+			<th>Manage</th>
+			<th>Milestones</th>
+		</tr>		
+	</thead>
+	<tbody>
+		<% @projects.each do |project| %>
+			<tr>
+				<td><%= project.id%></td>
+				<td><%= project.name%></td>
+				<td><%= project.status%></td>
+				<td>
+					<%=link_to "Show",project_path(project)%>
+					<%=link_to "Edit",edit_project_path(project)%>
+					<%=link_to "Delete",project_path(project),:method=>"delete"%>
+					<%if project.status!="Finished"%>
+						<%=link_to "Finish", finish_project_project_path(project)%>
+					<%end%>
+				</td>
+				<td><%=link_to "Milestone",project_milestones_path(project)%></td>
+			</tr>	
+		<% end %>
+	</tbody>
+</table>			
+<br>
+<%= link_to "New Project",new_project_path %>
+</div>
